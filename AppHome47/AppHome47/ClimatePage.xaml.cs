@@ -161,7 +161,7 @@ namespace AppHome47
 
             Content = stackLayout;
 
-            var setAlarm = new Label { Text = $"Будильник установлен на:\r\n"+ date + " " + time, FontSize = 17,  VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center };
+            var setAlarm = new Label { Text = $"Будильник установлен на:\r\n"+ date + " " + time, FontSize = 19,  VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center, Padding = new Thickness(30,10,30,10) };
             stackLayout.Children.Add(setAlarm);
         }
 
