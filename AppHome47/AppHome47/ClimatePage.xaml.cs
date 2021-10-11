@@ -135,7 +135,7 @@ namespace AppHome47
 
             stackLayout.Children.Add(button); 
 
-            button.Clicked += (sender1, e1) => button_Click(sender1, e1, datePicker.Date.ToString("dd.MM.yyyy"),timePicker.Time.ToString("00:00"));
+            button.Clicked += (sender1, e1) => button_Click(sender1, e1, datePicker.Date.ToString("dd.MM.yyyy"), timePicker.Time.ToString());
 
            // Регистрируем обработчик события выбора даты
             datePicker.DateSelected += (sender1, e1) => DateSelectedHandler(sender1, e1, datePickerText);
@@ -161,7 +161,7 @@ namespace AppHome47
 
             Content = stackLayout;
 
-            var setAlarm = new Label { Text = $"Будильник установлен на:"+ date + " " + time, FontSize = 17,  VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center , Margin = new Thickness(50) };
+            var setAlarm = new Label { Text = $"Будильник установлен на:\r\n"+ date + " " + time, FontSize = 17,  VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center };
             stackLayout.Children.Add(setAlarm);
         }
 
