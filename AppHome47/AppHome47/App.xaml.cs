@@ -10,7 +10,7 @@ namespace AppHome47
         {
             InitializeComponent();
 
-            MainPage = new ClimatePage();// MainPage();
+            MainPage = new AlarmPage();  // ClimatePage();
         }
 
         protected override void OnStart()

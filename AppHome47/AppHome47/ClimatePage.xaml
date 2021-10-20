@@ -7,6 +7,5 @@ x:Class="AppHome47.ClimatePage">
             <Label Text="Добро пожаловать!"  FontSize="Title"   Padding="30,10,30,10" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"  />
             <Button x:Name="weatherButton" Text="Узнать погоду" Clicked="Weather_Click" CornerRadius="15"  />
             <Button x:Name="AlarmButton" Text="Установить будильник" Clicked="Alarm_Click" CornerRadius="15"  />
-
     </StackLayout> 
     </ContentPage>
