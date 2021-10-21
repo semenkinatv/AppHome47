@@ -28,6 +28,7 @@
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
+
         </DatePicker>
 
         <Label x:Name="labelTime" Text="Выберите время" FontSize="Medium" Margin = "0, 30, 0, 0"/>
