@@ -55,7 +55,6 @@ namespace AppHome47
 
                 if (datePicker.Date < DateTime.Today)
                 {
-                    // SetState(timePicker, true);
                     VisualStateManager.GoToState(timePicker, "Invalid");
                 }
                 else if (datePicker.Date == DateTime.Today & timePicker.Time.Hours < DateTime.Now.Hour)
@@ -74,12 +73,7 @@ namespace AppHome47
             }
 
         }
-        void SetState(Label label, bool isValid)
-        {
-            string visualState = isValid ? "Valid" : "Invalid";
-            VisualStateManager.GoToState(label, visualState);
-
-        }
+       
         public void slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             if (labelSlider != null)
